@@ -145,6 +145,13 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .w85-s {
+    width: 85% !important;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .w90-s {
     width: 90% !important;
     margin: auto;
@@ -519,24 +526,37 @@ img {
   padding: 20% 32%;
 }
 .l-contents.-img-bg .l-contentsBox.-bottom-rightBtn {
-  top: 0%;
+  top: 50%;
   left: 75%;
-  transform: translateX(-50%);
-  width: 100%;
+  transform: translate(-50%, -50%);
+  width: 50%;
 }
 .l-contents.-img-bg .l-contentsBox.-bottom-rightBtn a {
   display: block;
-  padding: 0% 24%;
+  padding: 3% 0;
 }
 .l-contents.-img-bg .l-contentsBox.-bottom-leftBtn {
-  top: 0%;
+  top: 50%;
   left: 25%;
-  transform: translateX(-50%);
-  width: 100%;
+  transform: translate(-50%, -50%);
+  width: 50%;
 }
 .l-contents.-img-bg .l-contentsBox.-bottom-leftBtn a {
   display: block;
-  padding: 0% 24%;
+  padding: 3% 0;
+}
+@media screen and (max-width: 768px) {
+  .l-contents.-img-bg .l-contentsBox.-header-contact {
+    top: 53%;
+    right: 14%;
+    transform: translateY(-50%);
+    width: 42%;
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-kukaku_btm {
+  top: 89%;
+  left: 46.1%;
+  width: 50%;
 }
 @media screen and (min-width: 767px) {
   .l-contents.-img-bg .l-contentsBox.-kukaku_btm {
@@ -545,11 +565,16 @@ img {
     width: 15%;
   }
 }
+.l-contents.-img-bg .l-contentsBox.-plan_btn {
+  top: 87%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+}
 @media screen and (min-width: 767px) {
   .l-contents.-img-bg .l-contentsBox.-plan_btn {
     top: 75%;
     left: 50%;
-    transform: translateX(-50%);
     width: 50%;
   }
 }
@@ -560,11 +585,14 @@ img {
     transform: translateX(-50%);
   }
 }
+.l-contents.-img-bg .l-contentsBox.-wood_column02 {
+  top: 78.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 @media screen and (min-width: 767px) {
   .l-contents.-img-bg .l-contentsBox.-wood_column02 {
     top: 77%;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 .l-contents.-img-bg .l-contentsBox .l-contentsBox--wrapper {
@@ -906,9 +934,14 @@ img {
 }
 .l-flex--area .l-flex--contents.-columnBox02 {
   display: flex;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 767px) {
+  .l-flex--area .l-flex--contents.-columnBox02 {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
 }
 .l-flex--area .l-flex--contents.-columnBox02 .flexItem {
   width: 100%;
@@ -941,11 +974,11 @@ img {
   }
 }
 .l-flex--area .l-flex--contents.-columnBox03 .flexItem {
-  width: 100%;
+  width: 33.3333333333%;
 }
 @media screen and (min-width: 767px) {
   .l-flex--area .l-flex--contents.-columnBox03 .flexItem {
-    width: 33.3333%;
+    width: 33.3333333333%;
   }
 }
 .l-flex--area .l-flex--contents.-columnBox04 {
@@ -2263,7 +2296,7 @@ img {
   }
 }
 .l-text.-RESERVE {
-  background: #002a37;
+  background: #deb366;
 }
 .l-text.-RESERVE span {
   position: relative;
@@ -2388,10 +2421,10 @@ img {
   text-shadow: 2px 2px 3px white;
 }
 .l-text.-site-c {
-  color: #002a37;
+  color: #deb366;
 }
 .l-text.-site-c a {
-  color: #002a37;
+  color: #deb366;
 }
 .l-text .w-auto {
   display: inline-block;
@@ -2530,8 +2563,8 @@ img {
 }
 
 #sp-btm-contactArea {
-  background: #002a37;
-  border: 1px solid #002a37;
+  background: #deb366;
+  border: 1px solid #deb366;
   position: fixed;
   bottom: 0;
   left: 50%;
@@ -2544,8 +2577,8 @@ img {
 }
 
 #pc-right-contactArea {
-  background: #002a37;
-  border: 1px solid #002a37;
+  background: #deb366;
+  border: 1px solid #deb366;
   position: fixed;
   top: 33%;
   right: 2%;
@@ -2557,7 +2590,7 @@ img {
 }
 
 svg#rightBtn_top .cls-1 {
-  fill: #002a37;
+  fill: #deb366;
 }
 svg #rightBtn_btm .cls-1 {
   fill: #ffffff;
@@ -4390,10 +4423,9 @@ svg#bottomBtn_right .cls-2 {
 
 .menu_box {
   position: fixed;
-  top: 15px;
-  right: 0;
-  width: 70px;
-  height: 7px;
+  top: 2.9%;
+  right: 7%;
+  height: 4%;
   z-index: 10;
 }
 @media screen and (min-width: 767px) {
@@ -4429,7 +4461,7 @@ svg#bottomBtn_right .cls-2 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
-  width: 34px;
+  width: 33px;
   display: block;
 }
 @media screen and (min-width: 767px) {
@@ -4695,7 +4727,7 @@ svg#bottomBtn_right .cls-2 {
   }
 }
 header {
-  position: relative;
+  position: sticky !important;
 }
 
 .model {
@@ -4872,7 +4904,7 @@ header {
   }
 }
 .swiperArea .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
-  background: #002a37;
+  background: #deb366;
 }
 .swiperArea .swiper-container .swiper-pagination .swiper-pagination-bullet {
   transition: 0.5s all;

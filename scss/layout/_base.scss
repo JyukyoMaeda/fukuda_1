@@ -88,6 +88,12 @@ img{
 	max-width: 850px;
 	margin: auto;
 }
+.w85-s{
+	@include mq(sp){
+		width: 85% !important;
+		margin: auto;
+	}
+}
 .w90-s{
 	@include mq(sp){
 		width: 90% !important;

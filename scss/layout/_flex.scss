@@ -317,9 +317,12 @@
 		}
 		&.-columnBox02{
 				display: flex;
-				flex-wrap: nowrap;
-				align-items: flex-start;
-				justify-content: space-around;
+				flex-wrap: wrap;
+				@include mq(tb){
+					flex-wrap: nowrap;
+					align-items: flex-start;
+					justify-content: space-around;
+				}
 				.flexItem{
 					width: 100%;
 					padding: 0 5%;
@@ -347,10 +350,10 @@
 				justify-content: space-around;
 			}
 			.flexItem{
-				width: 100%;
+				width: calc(100%/3);
 				// padding: 0 3%;
 				@include mq(tb){
-					width: 33.3333%;
+					width: calc(100%/3);
 					// padding: 0 2%;
 					// &:nth-child(1),
 					// &:nth-child(4)
