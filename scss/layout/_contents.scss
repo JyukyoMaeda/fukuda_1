@@ -21,7 +21,7 @@
 				&.-parallax_bg{//ここに背景を指定する。
 					background-image: url(../images/bg/header_bg_s.jpg);
 					@include mq(tb){
-						background-image: url(../images/bg/header_bg.jpg);
+						background-image: url(../images/bg/wood_bg.jpg);
 					}
 				}
 			}
@@ -38,7 +38,8 @@
 				width: 100%;
 				a{
 					display: block;
-					padding: 8% 23%;
+					// padding: 8% 29%;
+					padding: 20% 32%;
 				}
 			}
 			// サイト下部に表示（SPのみ）
@@ -49,7 +50,8 @@
 				width: 100%;
 				a{
 					display: block;
-					padding: 8% 23%;
+					// padding: 8% 29%;
+					padding: 20% 32%;
 				}
 			}
 			//サイト下部に表示 （SPのみ）
@@ -75,6 +77,38 @@
 				}
 			}
 
+			// 区画
+			&.-kukaku_btm{
+				@include mq(tb){
+					top: 70%;
+					left: 17.1%;
+					width: 15%;
+				}
+			}
+			// プラン
+			&.-plan_btn{
+				@include mq(tb){
+					top: 75%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 50%;
+				}
+			}
+			// 主要構造材
+			&.-wood_content{
+				@include mq(tb){
+					top: 5%;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+			&.-wood_column02{
+				@include mq(tb){
+					top: 77%;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
 
 			.l-contentsBox--wrapper{
 				width: 100%;

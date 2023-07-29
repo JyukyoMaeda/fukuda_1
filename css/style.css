@@ -124,7 +124,7 @@ img {
 }
 
 .w1200 {
-  width: 95% !important;
+  width: 65% !important;
   max-width: 1200px;
   margin: auto;
 }
@@ -491,7 +491,7 @@ img {
 }
 @media screen and (min-width: 767px) {
   .l-contents.-img-bg .imgBox.-parallax.-parallax_bg {
-    background-image: url(../images/bg/header_bg.jpg);
+    background-image: url(../images/bg/wood_bg.jpg);
   }
 }
 .l-contents.-img-bg .l-contentsBox {
@@ -506,7 +506,7 @@ img {
 }
 .l-contents.-img-bg .l-contentsBox.-right-topBtn a {
   display: block;
-  padding: 8% 23%;
+  padding: 20% 32%;
 }
 .l-contents.-img-bg .l-contentsBox.-right-btmBtn {
   top: 52.5%;
@@ -516,7 +516,7 @@ img {
 }
 .l-contents.-img-bg .l-contentsBox.-right-btmBtn a {
   display: block;
-  padding: 8% 23%;
+  padding: 20% 32%;
 }
 .l-contents.-img-bg .l-contentsBox.-bottom-rightBtn {
   top: 0%;
@@ -537,6 +537,35 @@ img {
 .l-contents.-img-bg .l-contentsBox.-bottom-leftBtn a {
   display: block;
   padding: 0% 24%;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-kukaku_btm {
+    top: 70%;
+    left: 17.1%;
+    width: 15%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-plan_btn {
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-wood_content {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-wood_column02 {
+    top: 77%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .l-contents.-img-bg .l-contentsBox .l-contentsBox--wrapper {
   width: 100%;
@@ -913,18 +942,10 @@ img {
 }
 .l-flex--area .l-flex--contents.-columnBox03 .flexItem {
   width: 100%;
-  padding: 0 3%;
 }
 @media screen and (min-width: 767px) {
   .l-flex--area .l-flex--contents.-columnBox03 .flexItem {
     width: 33.3333%;
-    padding: 0 2%;
-  }
-  .l-flex--area .l-flex--contents.-columnBox03 .flexItem:nth-child(1), .l-flex--area .l-flex--contents.-columnBox03 .flexItem:nth-child(4) {
-    padding: 0 4% 0 0;
-  }
-  .l-flex--area .l-flex--contents.-columnBox03 .flexItem:nth-child(3), .l-flex--area .l-flex--contents.-columnBox03 .flexItem:nth-child(6) {
-    padding: 0 0 0 4%;
   }
 }
 .l-flex--area .l-flex--contents.-columnBox04 {
