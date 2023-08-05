@@ -99,14 +99,14 @@
 			}
 			// プラン
 			&.-plan_btn{
-				top: 87%;
+				top: 88%;
 				left: 50%;
 				transform: translateX(-50%);
 				width: 95%;
 				@include mq(tb){
 					top: 75%;
-					left: 50%;
-					width: 50%;
+					left: 61%;
+					width: 46%;
 				}
 			}
 			// 主要構造材

@@ -566,7 +566,7 @@ img {
   }
 }
 .l-contents.-img-bg .l-contentsBox.-plan_btn {
-  top: 87%;
+  top: 88%;
   left: 50%;
   transform: translateX(-50%);
   width: 95%;
@@ -574,8 +574,8 @@ img {
 @media screen and (min-width: 767px) {
   .l-contents.-img-bg .l-contentsBox.-plan_btn {
     top: 75%;
-    left: 50%;
-    width: 50%;
+    left: 61%;
+    width: 46%;
   }
 }
 @media screen and (min-width: 767px) {
@@ -2582,7 +2582,7 @@ img {
   position: fixed;
   top: 33%;
   right: 2%;
-  z-index: 9999;
+  z-index: 9;
 }
 #pc-right-contactArea .base-bg {
   height: auto;
