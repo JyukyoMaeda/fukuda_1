@@ -228,7 +228,7 @@
             </div>
             <!-- 住協プロ -->
             <div class="l-contents -img-bg">
-                <img class="sp" src="images/bg/JYOKYO-Pro_bg_s.jpg" alt="">
+                <img class="sp" style="margin-top: -5px;" src="images/bg/JYOKYO-Pro_bg_s.jpg" alt="">
                 <img class="pc" src="images/bg/JYOKYO-Pro_bg.jpg" alt="">
             </div>
             <!-- 設備・仕様01 -->
@@ -237,8 +237,30 @@
                     <img class="sp" src="images/bg/setsubi_bg_s.jpg" alt="">
                     <img class="pc" src="images/bg/setsubi_bg.jpg" alt="">
                 </div>
-                <div class="pc l-contentsBox -text">
-                    <img class="pc w1200" src="images/bg/setsubi_content.png" alt="">
+                <div class="l-contentsBox -text">
+                    <!-- <img class="sp w1200 l-mgb_12" src="images/bg/setsubi_1.png" alt="">
+                    <img class="sp w1200" src="images/bg/setsubi_2.png" alt=""> -->
+
+                    <img class="pc w1200 l-mgb_12" src="images/bg/setsubi_1.png" alt="">
+                    <img class="pc w1200" src="images/bg/setsubi_2.png" alt="">
+                </div>
+                <div class="l-contentsBox -setsubi-slider">
+                    <div class="l-slider">
+                        <div class="setsubi-slider setsubi-slider01">
+                            <div class="slick-img l-slickImg">
+                                <img class="" src="images/slider/setsubi-item01.jpg" alt=""/>
+                            </div>
+                            <div class="slick-img l-slickImg">
+                                <img class="" src="images/slider/setsubi-item02.jpg" alt=""/>
+                            </div>
+                            <div class="slick-img l-slickImg">
+                                <img class="" src="images/slider/setsubi-item03.jpg" alt=""/>
+                            </div>
+                            <div class="slick-img l-slickImg">
+                                <img class="" src="images/slider/setsubi-item04.jpg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- 設備・仕様02 -->
@@ -247,8 +269,11 @@
                     <img class="sp" src="images/bg/setsubi02_bg_s.jpg" alt="">
                     <img class="pc" src="images/bg/setsubi02_bg.jpg" alt="">
                 </div>
-                <div class="pc l-contentsBox -text">
-                    <img class="pc w1200" src="images/bg/setsubi02_content.png" alt="">
+                <div class="pc l-contentsBox -text_02">
+                    <img class="pc w1200 l-mgb_12" src="images/bg/setsubi_3.png" alt="">
+                    <img class="pc w1200 l-mgb_12" src="images/bg/setsubi_4.png" alt="">
+                    <img class="pc w1200" src="images/bg/setsubi_5.png" alt="">
+
                 </div>
             </div>
             <!-- アクセス -->
@@ -382,7 +407,7 @@
 
     </div>
     <!-- ボタン／スマホ -->
-    <div id="sp-btm-contactArea" class="sp">
+    <!-- <div id="sp-btm-contactArea" class="sp">
         <div class="l-contents -img-bg">
             <div class="imgBox">
                 <img class="base-bg" src="images/btn/sp-contactBtn.png" alt="">
@@ -438,7 +463,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -484,11 +509,11 @@
         });
         // 通常スライダー用
         $(function(){
-            $(".nomal-slider").slick({
+            $(".setsubi-slider01").slick({
                 autoplay: true,
                 prevArrow: '<img src="images/btn/prev-arrow.png" class="slide-arrow prev-arrow">',
                 nextArrow: '<img src="images/btn/next-arrow.png" class="slide-arrow next-arrow">',
-                slidesToShow: 3,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 responsive: [ // ブレイクポイントごとに設定を変更
                     {
@@ -502,62 +527,6 @@
                     }
                 ]
             });
-            $('.nomal-slider2').slick({
-                infinite: true, // 画像遅延読み込み
-                autoplay: true, // 自動再生
-                autoplaySpeed: 0, // スライドが動くスピード（ミリ秒）
-                speed: 10500,
-                cssEase: 'linear',
-                arrows: false,
-                dots: false, // カルーセル下のドット（現在の表示箇所を視覚化）
-                centerMode: true, //要素を中央寄せ
-                centerPadding:'0px', //両サイドの見えている部分のサイズ
-                slidesToShow:7, // 一度に見えているスライドの数
-                slidesToScroll:1, // スライドが切り替わる際の画像数
-                responsive: [ // ブレイクポイントごとに設定を変更
-                    {
-                        breakpoint: 1980,
-                        settings: {
-                            slidesToShow: 5,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            autoplaySpeed: 0,
-                            arrows :false,
-                            speed: 8500, // fade時の切り替えのスピード
-                            cssEase: 'linear', // easing効果を指定
-                            // centerMode: false, //要素を中央寄せ
-                        }
-                    }
-                ]
-            });
-        });
-        // サムネイルスライダー用
-        const sliderThumbnail  = new Swiper(".thumbnail", {
-            slidesPerView: 6, // サムネイルの枚数
-        });
-        const swiperMain = new Swiper(".main", {
-            loop: true,
-            pagination:{
-                el:".swiper-pagination",
-                type:"bullets",
-                clickable:"true"
-            } ,
-            thumbs: {
-                swiper: sliderThumbnail,
-            },
         });
     </script>
 </body>
